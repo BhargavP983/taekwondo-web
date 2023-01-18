@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/home.css" />
+  <script src="slider.js"></script>
+  <title>Taekawondo</title>
+</head>
+
+<body>
+  <nav>
+    <input id="nav-toggle" type="checkbox" />
+    <div class="logo"><img src="img/logo-new.jpg" alt="none" /></div>
+    <ul class="links">
+      <li><a class="active" href="main.html">Home</a></li>
+      <li class="dropdown">
+        <a href="#">About Us <ion-icon name="caret-down-sharp"></ion-icon> </a>
+        <div class="dropdown-content">
+          <a href="#">About Taekawondo</a>
+          <a href="#">Executive Members</a>
+        </div>
+      </li>
+      <li><a href="#">Events</a></li>
+      <li class="dropdown">
+        <a href="#">Gallery <ion-icon name="caret-down-outline"></ion-icon></a>
+        <div class="dropdown-content">
+          <a href="#">Photo Gallery</a>
+          <a href="#">Video Gallery</a>
+        </div>
+      <li><a href="#">Contact Us</a></li>
+      <li><a href="#">LogIn</a></li>
+    </ul>
+    <label for="nav-toggle" class="icon-burger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </label>
+  </nav>
+  <!-- 
+    iamge Slider starts here -->
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <img src="img/slider-1.jpg" style="width:100%" alt="nothing">
+    </div>
+    <div class="mySlides fade">
+      <img src="img/slider-2.jpg" style="width:100%" alt="nothing">
+    </div>
+    <div class="mySlides fade">
+      <img src="img/slider-3.jpg" style="width:100%" alt="nothing">
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  <div>
+    <span class="dot" onclick="currentSlide(0)"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+  </div>
+  <section class="class=" container-slider">
+    <div>
+      <span>6000 +</span>
+      <h3>athletes</h3>
+    </div>
+  </section>
+  <h2> About us</h2>
+  <div class="image one">
+      <div class="content">The ancient martial art of taekwondo has its fair share of rules which may seem confusing to the white belt beginner.
+        Here's our quick guide to the basic rules for those Kup graders just starting out.</div>
+  </div>
+  <script>
+    let slideIndex = 0;
+    let timeoutId = null;
+    const slides = document.getElementsByClassName("mySlides");
+    const dots = document.getElementsByClassName("dot");
+
+    showSlides();
+    function currentSlide(index) {
+      slideIndex = index;
+      showSlides();
+    }
+    function plusSlides(step) {
+
+      if (step < 0) {
+        slideIndex -= 2;
+
+        if (slideIndex < 0) {
+          slideIndex = slides.length - 1;
+        }
+      }
+
+      showSlides();
+    }
+    function showSlides() {
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+        dots[i].classList.remove('active');
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].classList.add('active');
+      if (timeoutId) {
+        clearTimeout(timeoutId);
+      }
+      timeoutId = setTimeout(showSlides, 5000); // Change image every 5 seconds
+    }
+  </script>
+  <!-- image slider ends here-->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
