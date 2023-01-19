@@ -318,9 +318,25 @@ h2 {
   color: rgb(228, 66, 66);
   text-align: center;
 }
+
+h4 {
+  color: rgb(228, 66, 66);
+  text-align: center;
+}
+
 .heading {
-  font-size: 60px;
+  font-size: 40px;
   align-content: center;
   position: relative;
 }
 
+.event {
+  display: flex;
+}
+
+.event-details {
+  margin: 10
+  border: 1px solid black;
+  font-size: .5em;
+  text-align: justify;
+}
