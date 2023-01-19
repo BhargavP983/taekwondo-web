@@ -79,61 +79,70 @@
   </div>
   </div>
   <h2 class="heading"> About us</h2>
-  <div class="content-text">
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
-    Nihil necessitatibus, blanditiis aut deserunt suscipit expedita<br>
-    quidem doloribus obcaecati maiores exercitationem atque <br>
-    excepturi quos tempora voluptate ducimus id molestiae ut officiis.</p>
-  <img src="img/Taekwondo1.jpg" alt="none">
+  <div class="content">
+    <div class="content-text" style="height: 50%; text-align: justify;">
+      <p >
+        Taekwondo Association of Andhra Pradesh (APTA) is the State Unit,
+        affiliated to the Taekwondo Federation of India and Andhra Pradesh
+        State Sports Council. </p>
+      <p >
+        "KUKKIWON is the World Headquarter of Taekwondo which was
+        founded in 1972. On 28th May 1973 The World Taekwondo Federation
+        (WTF) came into existence. In 1974 Taekwondo was admitted to Asian Games
+        as an official event.
+        In 1975 the sport of Taekwondo was admitted by the General
+        Association of International Sports Federation (GAISF).
+        The WTF became an International Olympic Committee recognized
+        sports Federation in 1980 Making Taekwondo an Olympics sport."</p>
+    </div>
+    <div class="content-img">
+      <img src="img/Taekwondo1.jpg" alt="none" align="right" style="height: 50%;">
+    </div>
   </div>
-  <div class="image one">
-    <p class="content">The ancient martial art of taekwondo has its fair share of rules which may seem confusing to
-      the white belt beginner.
-      Here's our quick guide to the basic rules for those Kup graders just starting out.</div>
-    </p>
-  <script>
-    let slideIndex = 0;
-    let timeoutId = null;
-    const slides = document.getElementsByClassName("mySlides");
-    const dots = document.getElementsByClassName("dot");
+    
+    <script>
+      let slideIndex = 0;
+      let timeoutId = null;
+      const slides = document.getElementsByClassName("mySlides");
+      const dots = document.getElementsByClassName("dot");
 
-    showSlides();
-    function currentSlide(index) {
-      slideIndex = index;
       showSlides();
-    }
-    function plusSlides(step) {
+      function currentSlide(index) {
+        slideIndex = index;
+        showSlides();
+      }
+      function plusSlides(step) {
 
-      if (step < 0) {
-        slideIndex -= 2;
+        if (step < 0) {
+          slideIndex -= 2;
 
-        if (slideIndex < 0) {
-          slideIndex = slides.length - 1;
+          if (slideIndex < 0) {
+            slideIndex = slides.length - 1;
+          }
         }
-      }
 
-      showSlides();
-    }
-    function showSlides() {
-      for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-        dots[i].classList.remove('active');
+        showSlides();
       }
-      slideIndex++;
-      if (slideIndex > slides.length) {
-        slideIndex = 1
+      function showSlides() {
+        for (let i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+          dots[i].classList.remove('active');
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].classList.add('active');
+        if (timeoutId) {
+          clearTimeout(timeoutId);
+        }
+        timeoutId = setTimeout(showSlides, 5000); // Change image every 5 seconds
       }
-      slides[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].classList.add('active');
-      if (timeoutId) {
-        clearTimeout(timeoutId);
-      }
-      timeoutId = setTimeout(showSlides, 5000); // Change image every 5 seconds
-    }
-  </script>
-  <!-- image slider ends here-->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </script>
+    <!-- image slider ends here-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
