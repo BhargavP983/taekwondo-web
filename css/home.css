@@ -324,6 +324,13 @@ h4 {
   text-align: center;
 }
 
+.about-us-details {
+  display: flex;
+}
+.about-us, .about-us-para {
+  font-size: 10px;
+}
+
 .heading {
   font-size: 40px;
   align-content: center;
@@ -335,7 +342,7 @@ h4 {
 }
 
 .event-details {
-  margin: 10
+  margin: auto;
   border: 1px solid black;
   font-size: .5em;
   text-align: justify;
