@@ -326,8 +326,9 @@ h4 {
 
 .about-us-details {
   display: flex;
+  font-size: 10px;
 }
-.about-us, .about-us-para {
+.about-us-para {
   font-size: 10px;
 }
 
