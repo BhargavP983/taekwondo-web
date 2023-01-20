@@ -215,3 +215,17 @@ nav .navbar .links li:hover .js-sub-menu {
     max-width: 100%;
   }
 }
+
+.carousel {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  width: 100%;
+}
+
+.carousel-inner img {
+  width: 100%;
+}

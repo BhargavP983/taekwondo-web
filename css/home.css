@@ -1,3 +1,11 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  font-family: 'Source Code Pro', monospace;
+  background-image: url("bg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
 nav {
   position: fixed;
   z-index: 10;
@@ -141,7 +149,7 @@ nav .icon-burger .line {
     font-size: 20px;
   }
 
-  nav :checked~.links {
+  nav :checked ~ .links {
     bottom: 0;
   }
 
@@ -149,15 +157,15 @@ nav .icon-burger .line {
     display: block;
   }
 
-  nav :checked~.icon-burger .line:nth-child(1) {
+  nav :checked ~ .icon-burger .line:nth-child(1) {
     transform: translateY(10px) rotate(225deg);
   }
 
-  nav :checked~.icon-burger .line:nth-child(3) {
+  nav :checked ~ .icon-burger .line:nth-child(3) {
     transform: translateY(-10px) rotate(-225deg);
   }
 
-  nav :checked~.icon-burger .line:nth-child(2) {
+  nav :checked ~ .icon-burger .line:nth-child(2) {
     opacity: 0;
   }
 }
@@ -169,9 +177,11 @@ nav .icon-burger .line {
 
 .mySlides {
   display: none;
-  
 }
-
+.carousel-inner {
+  display: flex;
+  width: 100%;
+}
 img {
   vertical-align: middle;
 }
@@ -181,7 +191,6 @@ img {
 }
 
 .slideshow-container {
-  
   height: 100%;
   width: 100%;
   position: relative;
@@ -247,7 +256,6 @@ img {
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-
   .prev,
   .next,
   .text {
@@ -257,8 +265,8 @@ img {
 
 .container-slider {
   margin-top: -78px;
-  margin-left: 5%;
-  margin-right:5%;
+  margin-left: 15%;
+  margin-right: 15%;
   z-index: 9;
   background: rgba(243, 17, 17, 0.74);
   position: relative;
@@ -277,8 +285,9 @@ img {
 .separator {
   margin: auto;
   align-content: center;
+  zoom: 1.5;
   position: relative;
-  font-size: 3.5em;
+  font-size: 0.5em;
 }
 
 .content-num {
@@ -287,7 +296,7 @@ img {
 .content {
   display: flex;
 }
-.content-text{
+.content-text {
   text-align: center;
 }
 
@@ -324,18 +333,41 @@ h4 {
   text-align: center;
 }
 
-.about-us-details {
+.about {
   display: flex;
-  font-size: 10px;
+  margin: auto;
+  padding: inherit;
+  justify-content: space-evenly;
+}
+.about-us {
+  text-align: center;
 }
 .about-us-para {
-  font-size: 10px;
+  border: 1px dotted red;
+}
+.about-us-extra {
+  border: 1px solid black;
+}
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
 }
 
+li {
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+ul li:before {
+  content: "- ";
+  padding-right: 5px;
+}
 .heading {
   font-size: 40px;
   align-content: center;
   position: relative;
+  border: ipx solid black;
 }
 
 .event {
@@ -345,6 +377,6 @@ h4 {
 .event-details {
   margin: auto;
   border: 1px solid black;
-  font-size: .5em;
+  font-size: 0.5em;
   text-align: justify;
 }
