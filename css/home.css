@@ -368,6 +368,7 @@ h4 {
 }
 
 .about-us-extra {
+  display: flex;
   border: 1px solid black;
 }
 
@@ -377,10 +378,7 @@ ul {
   padding-left: 0;
 }
 
-li {
-  padding-left: 1em;
-  text-indent: -1em;
-}
+
 
 ul li:before {
   content: "- ";
@@ -396,10 +394,11 @@ ul li:before {
 .event {
   display: flex;
 }
-
+blockquote {
+  padding: inherit;
+}
 .event-details {
-  margin: auto;
-  border: 1px solid black;
-  font-size: 0.5em;
+  padding: inherit;
   text-align: justify;
 }
+
