@@ -216,6 +216,7 @@ nav .icon-burger .line {
 
 .footer-links a {
     color: #737373;
+    text-decoration: none;
 }
 
 .footer-links a:active,
