@@ -209,7 +209,7 @@ nav .icon-burger .line {
     box-shadow: 10px 40px 40px rgba(0, 0, 0, .2);
     pointer-events: none;
     right: auto;
-    width: 40vw;
+    width: 35vw;
 }
 
 .particles-js-canvas-el {
@@ -353,6 +353,7 @@ ul.contact-info li {
 
 .info-right h4 {
     color: #fff;
+    padding-left: 5px;
     font-size: 18px;
 }
 
