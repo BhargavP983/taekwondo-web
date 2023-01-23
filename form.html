@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!---Coding By CodingLab | www.codinglabweb.com--->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Registration Form in HTML CSS</title>
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Font Awesome icons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!---Custom CSS File--->
+    <link rel="stylesheet" href="css/form.css" />
+    <script src="js/form.js"></script>
+</head>
+
+<body>
+    <section class="container">
+        <header>CADET / JUNIOR / SENIOR</header>
+        <h4>INDIVIDUAL ENTRY FORM</h4>
+        <form action="#" class="form">
+            <div class="input-box">
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter full name (in Capital Letters)" required />
+            </div>
+
+            <div class="input-box">
+                <label>Weight Category</label>
+                <input type="text" placeholder="Enter Weight Category" required />
+            </div>
+
+            <div class="column">
+                <div class="input-box">
+                    <label>Age</label>
+                    <input type="number" placeholder="Enter Age" required />
+                </div>
+                <div class="input-box">
+                    <label>Birth Date</label>
+                    <input type="date" placeholder="Enter birth date" required />
+                </div>
+                <div class="input-box">
+                    <label>Weight</label>
+                    <input type="number" placeholder="Enter Weight" required />
+                </div>
+            </div>
+            <div class="input-box">
+                <label>Parent / Gaurdian Name</label>
+                <input type="text" placeholder="Enter full name" required />
+            </div>
+            <div class="gender-box">
+                <h3>Gender</h3>
+                <div class="gender-option">
+                    <div class="gender">
+                        <input type="radio" id="check-male" name="gender" checked />
+                        <label for="check-male">male</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" id="check-female" name="gender" />
+                        <label for="check-female">Female</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" id="check-other" name="gender" />
+                        <label for="check-other">prefer not to say</label>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="input-box">
+                    <label>Present Belt Grade</label>
+                    <input type="text" placeholder="Type With Care" required />
+                </div>
+                <div class="input-box">
+                    <label>TFI Id Card No.</label>
+                    <input type="text" placeholder="Type With Care" required />
+                </div>
+            </div>
+            <div class="column">
+                <div class="input-box">
+                    <label>Academic Quialification</label>
+                    <input type="text" placeholder="Enter Qualification" required />
+                </div>
+                <div class="input-box">
+                    <label>Name Of the School / College</label>
+                    <input type="text" placeholder="Enter full name" required />
+                </div>
+            </div>
+            <div class="input-box address">
+                <label>Address</label>
+                <input type="text" placeholder="Enter street address" required />
+                <input type="text" placeholder="Enter street address line 2" required />
+                <div class="column">
+                    <div class="select-box">
+                        <select>
+                            <option hidden>Country</option>
+                            <option>America</option>
+                            <option>Japan</option>
+                            <option>India</option>
+                            <option>Nepal</option>
+                        </select>
+                    </div>
+                    <input type="text" placeholder="Enter your city" required />
+                </div>
+                <div class="column">
+                    <input type="text" placeholder="Enter your region" required />
+                    <input type="number" placeholder="Enter postal code" required />
+                </div>
+            </div>
+            <div class="column">
+                <div class="input-box">
+                    <label> Upload a Passport Size photo </label>
+                    <input type="file" required />
+                </div>
+                <div class="input-box file-upload">
+                    <label>Signature Of the Participant</label>
+                    <input type="file" required />
+                </div>
+                <div class="input-box file-upload">
+                    <label>Signature OF Parent / Gaurdian </label>
+                    <input type="file" required />
+                </div>
+            </div>
+            <div class="declaration">
+                <input type="checkbox" style="height: 10px;">
+                <label>I, hereby declare that Above Inforamtion is true upto my knowledge</label>
+            </div>
+            <button>Submit</button>
+        </form>
+    </section>
+</body>
+
+</html>

@@ -10,14 +10,15 @@ body {
 }
 
 .row-login {
-    margin-left: 400px;
-    margin-right: -400px;
-    height: 100px;
+    margin-left: 500px;
+    margin-right: -500px;
 }
+
 .card-signin {
-    border: 0;
-    border-radius: 1rem;
-    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+    border-radius: 45px;
+    background: #e0e0e0;
+    box-shadow: inset 8px 8px 23px #a8a8a8,
+        inset -8px -8px 23px #ffffff;
 }
 
 .card-signin .card-title {
@@ -30,6 +31,9 @@ body {
     padding: 2rem;
 }
 
+hr {   
+    border-top: 1px solid black;
+}
 .form-signin {
     width: 100%;
 }
@@ -105,13 +109,4 @@ body {
     color: #777;
 }
 
-.btn-google {
-    color: white;
-    background-color: #ea4335;
-}
-
-.btn-facebook {
-    color: white;
-    background-color: #3b5998;
-}
 /*---- Log in Form CSS Ends Here ----*/
