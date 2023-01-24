@@ -1,11 +1,17 @@
+.section-heading {
+    margin-top: 78px;
+    justify-content: center;
+    text-align: center;
+}
 .card-list {
     margin: 1em;
-    width: 20em;
+    width: 35%;
 }
 
 .subheader {
     background-color: #FAFDFF;
-    font-size: 0.75em;
+    text-align: center;
+    font-size: 1em;
     font-weight: bold;
     padding: 0.75em;
 }
@@ -16,15 +22,15 @@
 }
 
 .members-card {
-    margin-top: 78px;
     display: flex;
     flex-wrap: wrap;
+    flex-flow: wrap;
 }
 
 .card {
     width: 190px;
-    height: 254px;
-    margin: 2%;
+    height: 250px;
+    margin: 3%;
     border-radius: 10px;
     background: #f5f5f5;
     padding: 2rem 1.5rem;
