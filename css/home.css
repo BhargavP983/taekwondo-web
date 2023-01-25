@@ -200,32 +200,7 @@ img {
 }
 
 
-.about {
-  display: flex;
-  margin: 80px;
-  padding: inherit;
-  position: relative;
-  text-align: justify;
-  justify-content: space-evenly;
-}
 
-.about-us {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
-.text-justify {
-  margin: 0 5%;
-  /* text-align: center; */
-  align-items: center;
-}
-
-.about-us-para {
-  margin-top: -50px;
-  position: relative;
-}
 
 
 /*---------------- Events And Updates --------------------*/

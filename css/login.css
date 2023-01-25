@@ -4,14 +4,22 @@
     --input-padding-y: .75rem;
 }
 
+html {
+    font-size: inherit !important;
+}
+
 body {
     background: #4f5cf3;
     /*background: linear-gradient(to right, #ea4335, #4f5cf3);*/
 }
 
+.login {
+    margin-top: 80px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 55px;
+}
 .row-login {
-    margin-left: 500px;
-    margin-right: -500px;
 }
 
 .card-signin {
