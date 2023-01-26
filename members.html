@@ -13,43 +13,66 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- BootStrap Font Icon CDN-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/members.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
+    <script src="js/index.js"></script>
     <title>Executive Members</title>
 </head>
 
 <body>
     <!-- Navigation Bar Starts Here -->
-    <nav>
-        <input id="nav-toggle" type="checkbox" />
-        <div class="logo"><img src="img/APTA-logo.jpg" alt="logo" /></div>
-        <ul class="links">
-            <li><a href="home.html">Home</a></li>
-            <li class="dropdown">
-                <a href="#" class="active">About Us <ion-icon name="caret-down-sharp"></ion-icon> </a>
-                <div class="dropdown-content">
-                    <a href="#">About Taekawondo</a>
-                    <a href="members.html">Executive Members</a>
+    <header>
+        <nav id="main-navbar" class="navbar navbar-default navbar-fixed-top">
+            <div class="container navbar-container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="img/APTA-logo.jpg" alt=""
+                            style="border-radius: 50%;"></a>
                 </div>
-            </li>
-            <li><a href="#">Events</a></li>
-            <li class="dropdown">
-                <a href="#">Gallery <ion-icon name="caret-down-outline"></ion-icon></a>
-                <div class="dropdown-content">
-                    <a href="events.html">Photo Gallery</a>
-                    <a href="#">Video Gallery</a>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#">About Us <i class="bi bi-caret-down-fill"></i> </a>
+                            <div class="dropdown-content">
+                                <a href="#">About Taekawondo</a>
+                                <a href="members.html">Executive Members</a>
+                            </div>
+                        </li>
+                        <li><a href="#portfolio">Events</a></li>
+                        <li class="dropdown">
+                            <a href="#">Gallery <i class="bi bi-caret-down-fill"></i> </a>
+                            <div class="dropdown-content">
+                                <a href="events.html">Photo Gallery</a>
+                                <a href="#">Video Gallery</a>
+                            </div>
+                        </li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                        <li><a href="login.html">Log in</a></li>
+                        </li>
+                    </ul>
                 </div>
-            <li><a href="contact-us.html">Contact Us</a></li>
-            <li><a href="login.html">LogIn</a></li>
-        </ul>
-        <label for="nav-toggle" class="icon-burger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </label>
-    </nav>
+                <div class="top-social">
+                    <ul id="top-social-menu">
+                        <li><a class="facebook" href="#"><i class="bi bi-facebook"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="bi bi-twitter"></i></a></li>
+                        <li><a href="mailto:support@aptaekwondo.org ? {subject} = {subject}"><i
+                                    class="bi bi-envelope"></i> support@aptaekwondo.org</a></li>
+                        <li><a href="tel:+918341810905"><i class="bi bi-telephone"></i> +918341810905</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
     <!-- Navigation Bar Ends Here --->
     <!--Members Starts here-->
     <h1 class="section-heading">Executive Council Memebrs</h1>

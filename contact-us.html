@@ -6,52 +6,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/contact-us.css" />
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
-    <!-- Bootstrap CDN  -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <!-- Bootstrap Font Icon CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
+    <script src="js/index.js"></script>
     <title>Contact-us</title>
 </head>
+
 <body>
-    <nav>
-        <input id="nav-toggle" type="checkbox" />
-        <div class="logo"><img src="img/APTA-logo.jpg" alt="logo" /></div>
-        <ul class="links">
-            <li><a href="home.html">Home</a></li>
-            <li class="dropdown">
-                <a href="#">About Us <ion-icon name="caret-down-sharp"></ion-icon></a>
-                <div class="dropdown-content">
-                    <a href="#">About Taekawondo</a>
-                    <a href="members.html">Executive Members</a>
+    <!-- Navigation Bar Starts Here -->
+    <header>
+        <nav id="main-navbar" class="navbar navbar-default navbar-fixed-top">
+            <div class="container navbar-container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="img/APTA-logo.jpg" alt=""
+                            style="border-radius: 50%;"></a>
                 </div>
-            </li>
-            <li><a href="#">Events</a></li>
-            <li class="dropdown">
-                <a href="#">Gallery <ion-icon name="caret-down-outline"></ion-icon></a>
-                <div class="dropdown-content">
-                    <a href="events.html">Photo Gallery</a>
-                    <a href="#">Video Gallery</a>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#">About Us <i class="bi bi-caret-down-fill"></i> </a>
+                            <div class="dropdown-content">
+                                <a href="#">About Taekawondo</a>
+                                <a href="members.html">Executive Members</a>
+                            </div>
+                        </li>
+                        <li><a href="#portfolio">Events</a></li>
+                        <li class="dropdown">
+                            <a href="#">Gallery <i class="bi bi-caret-down-fill"></i> </a>
+                            <div class="dropdown-content">
+                                <a href="events.html">Photo Gallery</a>
+                                <a href="#">Video Gallery</a>
+                            </div>
+                        </li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                        <li><a href="log.php">Log in</a></li>
+                        </li>
+                    </ul>
                 </div>
-            <li><a href="contact-us.html" class="active">Contact Us</a></li>
-            <li><a href="login.html">LogIn</a></li>
-        </ul>
-        <label for="nav-toggle" class="icon-burger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </label>
-    </nav>
+                <div class="top-social">
+                    <ul id="top-social-menu">
+                        <li><a class="facebook" href="#"><i class="bi bi-facebook"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="bi bi-twitter"></i></a></li>
+                        <li><a href="mailto:support@aptaekwondo.org ? {subject} = {subject}"><i
+                                    class="bi bi-envelope-at"></i> support@aptaekwondo.org</a></li>
+                        <li><a href="tel:+918341810905"><i class="bi bi-telephone"></i> +918341810905</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Navigation Bar Ends Here --->
     <!-- Contact Us Page starting -->
-    <section class="section-bg" style="">
-        data-scroll-index="7">
+    <section class="section-bg" style="background-image: url(bg.jpg); padding-top: 78px;" data-scroll-index="7">
         <div class="overlay pt-100 pb-100 ">
-            <div class="container" style="margin-top: 40px;">
+            <div class="container">
                 <div class="row">
                     <div class="col-lg-6 d-flex align-items-center">
                         <div class="contact-info">
@@ -67,7 +93,7 @@
                                         <i class="bi bi-phone-vibrate"></i>
                                     </div>
                                     <div class="info-right">
-                                        <h4>+11223344550</h4>
+                                        <h4> +91 8341810905</h4>
                                     </div>
                                 </li>
                                 <li>
@@ -75,15 +101,16 @@
                                         <i class="bi bi-envelope"></i>
                                     </div>
                                     <div class="info-right">
-                                        <h4>info@example.com</h4>
+                                        <h4> support@aptaekwando.org</h4>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="info-left">
-                                        <i class="bi bi-geo"></i>
+                                        <i class="bi bi-pin-map"></i>
                                     </div>
                                     <div class="info-right">
-                                        <h4>1243 Stree New Chandigarh, INDIA</h4>
+                                        <h4> D.No. 7-10-43/3, Aishwarya Aavaas, Old Gajuwaka, Visakhapatnam, AP, INDIA
+                                        </h4>
                                     </div>
                                 </li>
                             </ul>
@@ -116,9 +143,8 @@
                                     </div>
                                     <div class="col-md-12">
                                         <!--contact button-->
-                                        <button class="btn-big btn btn-bg"
-                                            style="background-color: aqua; padding: 1.5%;">
-                                            Send Us <i class="bi bi-arrow-bar-right"></i>
+                                        <button class="btn-big btn btn-bg">
+                                            Send Us <i class="fas fa-arrow-right"></i>
                                         </button>
                                     </div>
                                 </div>
@@ -188,21 +214,13 @@
 
                 <div class="col-md-4 col-sm-6 col-xs-12">
                     <ul class="social-icons">
-                        <li>
-                            <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
-                        </li>
-                        <li>
-                            <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
-                        </li>
-                        <li>
-                            <a class="google-plus" href="#"><i class="fa fa-google-plus"></i></a>
-                        </li>
-                        <li>
-                            <a class="youtube" href="#"><i class="fa fa-youtube"></i></a>
-                        </li>
+                        <li><a class="facebook" href="#"><i class="bi bi-facebook"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="bi bi-twitter"></i></a></li>
+                        <li><a class="google" href="#"><i class="bi bi-google"></i></a></li>
+                        <li><a class="youtube" href="#"><i class="bi bi-youtube"></i></a></li>
                     </ul>
-                </div>
             </div>
+        </div>
         </div>
     </footer>
 </body>

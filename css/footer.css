@@ -150,19 +150,19 @@
 }
 
 .social-icons a.facebook:hover {
-    background-color: #3b5998;
+    background-color: #3b58989b;
 }
 
 .social-icons a.twitter:hover {
-    background-color: #00aced;
+    background-color: #00aeedb4;
 }
 
-.social-icons a.google-plus:hover {
-    background-color: #007bb6;
+.social-icons a.google:hover {
+    background-color: #00ff3cb9;
 }
 
 .social-icons a.youtube:hover {
-    background-color: #ea4c89;
+    background-color: #d0212192;
 }
 
 @media (max-width: 767px) {
@@ -174,3 +174,16 @@
 }
 
 /*------------------ Footer CSS Ends Here -------------------*/
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .container-footer{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-left: -35px;
+    }
+}

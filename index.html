@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- Bootstrap Font Icon CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/home.css" />
+  <script src="js/index.js"></script>
+  <script src="css/events.js"></script>
+  <title>AP Taekawondo</title>
+</head>
+
+<body>
+  <!-- Navigation Bar Starts Here -->
+  <header>
+    <nav id="main-navbar" class="navbar navbar-default navbar-fixed-top">
+      <div class="container navbar-container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+            aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="img/APTA-logo.jpg" alt="" style="border-radius: 50%;"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#Home">Home</a></li>
+            <li class="dropdown">
+              <a href="#">About Us <i class="bi bi-caret-down-fill"></i> </a>
+              <div class="dropdown-content">
+                <a href="#">About Taekawondo</a>
+                <a href="members.html">Executive Members</a>
+              </div>
+            </li>
+            <li><a href="#portfolio">Events</a></li>
+            <li class="dropdown">
+              <a href="#">Gallery <i class="bi bi-caret-down-fill"></i> </a>
+              <div class="dropdown-content">
+                <a href="events.html">Photo Gallery</a>
+                <a href="#">Video Gallery</a>
+              </div>
+            </li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li><a href="login.html">Log in</a></li>
+            </li>
+          </ul>
+        </div>
+        <div class="top-social">
+          <ul id="top-social-menu">
+            <li><a class="facebook" href="#"><i class="bi bi-facebook"></i></a></li>
+            <li><a class="twitter" href="#"><i class="bi bi-twitter"></i></a></li>
+            <li><a href="mailto:support@aptaekwondo.org ? {subject} = {subject}"><i class="bi bi-envelope-at"></i>
+                support@aptaekwondo.org</a></li>
+            <li><a href="tel:+918341810905"><i class="bi bi-telephone"></i> +918341810905</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Navigation Bar Ends Here --->
+  <!-- Image Slider Starts Here -->
+  <div class="slider full-width-image">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="img/slider-1.jpg" alt="Los Angeles" style="width:100%;">
+        </div>
+
+        <div class="item">
+          <img src="img/slider-2.jpg" alt="Chicago" style="width:100%;">
+        </div>
+
+        <div class="item">
+          <img src="img/slider-3.jpg" alt="New york" style="width:100%;">
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+  <!-- Image Slider Ends Here -->
+  <!-- Overlay Container Starts Here -->
+  <div class="container-slider">
+    <div class="overlay">
+      <h3 class="separator-text">6000 + <br>Registered Athletes</h3>
+    </div>
+    <img src="img/separator.png" alt="separator" class="separator"
+      style="align-items:top; align-content: center; background: no-repeat;"></img>
+    <div class="overlay">
+      <h3 class="separator-text">200 + <br>Registered Clubs</h3>
+    </div>
+    <img src="img/separator.png" alt="separator" class="separator"></img>
+    <div class="overlay">
+      <h3 class="separator-text">300 + <br> Registered Officials</h3>
+    </div>
+  </div>
+  </div>
+  <!-- Overlay Container Ends Here -->
+  <div class="container-fluid" style="margin-top: 78px;">
+    <div class="row top-cards">
+      <div class="col-sm-2 col-md-3 col-lg-4">
+        <div class="card">
+          <div class="card-block text-center">
+            <h1 class="card_title">Vision</h1>
+            <hr>
+            <p class="card_text">Taekwondo For All.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 col-md-6 col-lg-4">
+        <div class="card">
+          <div class="card-block">
+            <h1 class="card_title">MISSION</h1>
+            <hr>
+            <p class="card_text">Develop and grow Taekwondo throughout the world,from a grass roots
+              level all the way through to an elite level,to provide all with the opportunity to play,
+              watch and enjoy the sport regardless of age, gender, religion, ethnicity or ability.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2 col-md-3 col-lg-4">
+        <div class="card">
+          <div class="card-block">
+            <h1 class="card_title">VALUES</h1>
+            <hr>
+            <p class="card_text">
+              Inclusiveness, Leadership, Respect, Tolerance, Excellence, and Integrity.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Profile Card -->
+  <div class="profile-card">
+    <figure class="snip0051">
+      <img src="img/Shekhar.jpg" alt="sample1" />
+      <div class="icons">
+        <a href="#"><i class="ion-ios-home-outline"></i></a>
+        <a href="#"><i class="ion-ios-email-outline"></i></a>
+        <a href="#"><i class="ion-ios-telephone-outline"></i></a>
+      </div>
+      <figcaption>
+        <h2 style="font-size: 15px; text-align: center;">T Harsha vardhana Prasad</h2>
+        <p style="text-align: center;">President A.P. Taekwondo Association <br> Vice President Taekwondo Federation of
+          India</p>
+      </figcaption>
+    </figure>
+  </div>
+  <!-- ENd OF Profile Card -->
+  <section class="section-black">
+    <div class="container text-center">
+      <h2 class="section-title"><b><i>Obectives</i></b></h2>
+      <div class="text-justify">
+        <p>WT is responsible for the development, growth, and administration of Taekwondo around the world. WT has
+          identified three strategic priorities for the 2017-2021 cycle:</p>
+        <ol>
+          <li>Add value to the Olympic Movement: WT recognizes our obligation to contribute to the growth and the
+            success
+            of
+            the Olympic Movement. We do this by aligning our policies and practices with those of the IOC and by
+            continuously improving key indicators including social media and governance. At the same time, WT seeks to
+            champion Olympic Values of education, inclusiveness, friendship, solidarity and fair play, and to contribute
+            to
+            building a peaceful and better world though sports, including close cooperation with our related
+            organization,
+            the Taekwondo Humanitarian Foundation, for development through sport.</li>
+          <li>Development of Events: WT works closely with organizing committees to ensure cost-efficient, sustainable
+            events that leave a lasting legacy for the local Taekwondo and sporting communities. At the same time, we
+            seek
+            to ensure a coordinated and well-balanced event calendar that allows for participation at all levels and
+            across
+            all regions of the world. These high quality events should promote our sport and athletes to new audiences.
+          </li>
+          <li>Development of Member Associations: WT recognizes that development of our member associations is critical
+            to
+            having both stronger events and greater grass roots growth. Our ambition is to strengthen our support and
+            training for of our key stakeholders, sharing best practices (organization, administration, event
+            management,
+            good governance, gender equality , Olympic values, sustainable development, etc) and the availability of
+            tools
+            to facilitate quality development To this end we use tools such as our Global Membership Systems, MNA
+            Survey,
+            and Development Program to monitor and support the development of our members at the administrative,
+            competition
+            official, coach, entourage, and athlete levels including post-athletic career.
+            <ul id="list">
+              <li>Established : May 28, 1973</li>
+              <li>No. of Member National Associations : 212</li>
+              <!--
+              <li>President : Dr. Chungwon Choue</li>
+              <li>Affiliation to SportAccord (GAISF) : October 8, 1975</li>
+              <li>IOC Recognition : July 17, 1980 (83rd IOC Session in Moscow)</li>
+              <li>Affiliation to ASOIF : February 15, 1995</li>
+              <li>Olympic Games Demonstration Sport : 1988 Seoul Olympic Games & 1992 Barcelona Olympic Games</li>
+              <li>Official Olympic Sport : Sydney 2000 Olympic Games, September 4, 1994 (103rd IOC Session in Paris)
+              </li>
+              <li>Confirmation of Taekwondo as an Official Sport : for Athens 2004 Olympic Games, December 11-13, 2000
+                (IOC EB Meeting in Lausanne)</li>
+              <li>Expansion of Taekwondo quota at Athens 2004 Olympic Games to 124 in eight weight categories,
+                respective
+                four weight classes for men and women, Sep.18-20, 2001 (IOC EB Meeting in Lausanne)</li>
+              <li>Feb. 5-7, 2006: IOC Executive Board decided at its meeting in Turin, Italy to expand the number of
+                taekwondo entry in Beijing 2008 Olympic Games from 124 to 128 (two males and two females were added in
+                consideration of the new establishment of Oceania Taekwondo Union).</li>
+              <li>IOC Executive Board decided the number of sports programs of the 2008 Beijing Olympic Games to be
+                27,
+                including Taekwondo. The 114th IOC Session held in Mexico City, Mexico on November 29, 2002 also
+                confirmed
+                inclusion of Taekwondo in the Beijing 2008 Olympic Games.</li>
+              <li>IOC reviewed the Olympic program for 2012 London, Taekwondo was voted to retain in the Olympic
+                Program
+                of the London 2012 Olympic Games at its 117th Session in Singapore on July 8, 2005.</li>
+              <li>IOC selected 26 core sports for 2016 Rio Olympic Games, including taekwondo at its 121st Session in
+                Copenhagen on Oct. 2-9, 2009.</li>
+              <li>IOC confirmed taekwondo as one of the 25 core sports for 2020 Tokyo Olympic Games at its 125th
+                Session
+                in Buenos Aires on Sept. 7-10, 2013</li>
+              <li>International Paralympic Committee (IPC) Governing Board granted 'IPC-recognized IF' status to the
+                WT on
+                Oct. 16, 2013.</li>
+              <li>I PC final decision on the sports programs of the 2020 Tokyo Paralympics, including taekwondo, was
+                made
+                at the 69th IPC Governing Board meeting held in Abu Dhabi, UAE on January 30-Feburary 1, 2015.</li>
+              <li>Nov. 14-15, 2015: IPC General Assembly in Mexico City, Mexico granted a full membership to the WT
+                (Nov.
+                15: ratification of new members) on Nov. 15, 2015.</li> -->
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+  <!-- Event Card -->
+  <div class="container">
+    <h3 class="section-title"><b>Events and Upadtes</b></h3>
+    <!--small cards-->
+    <div class="row top-cards">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-header-grey">
+              <h1 class="card-heading">INFO</h1>
+              <hr>
+              <h1 class="card-heading">AP State TAEKWONDO Kyorugi & Poomsae Championship - 2022-23</h1>
+            </div>
+            <div class="card-body">
+              <p class="card-p">
+                39<sup>th</sup><b> JUNIOR ,</b> 38<sup>th</sup> <b>SENIOR, </b>5<sup>th</sup> <b>CADET
+                  KYORUGI, </b>12<sup>th</sup> <b>JUNIOR, </b><b>11<sup>th</sup> <b>SENIOR, </b>5<sup>th</sup> <b>CADET
+                    <br>
+                  </b>POOMASAE A.P. STATE TAEKWONDO CHAMPIONSHIPS</b>
+              </p>
+              <hr>
+              <p class="details">
+                <span class="row">
+                  <b><i class="material-icons md-36 icon side-heading">Date :</i></b>
+                  <span class="row-item">
+                    <time>29 JAN 2023 - 31 JAN 2023</time>
+                  </span>
+                </span>
+
+                <span class="row">
+                  <b><i class="material-icons md-36 icon side-heading">Venue :</i></b>
+                  <span class="row-item">
+                    <strong>Rajiv Gandhi Indoor Stadium, Anakapalli</strong>
+                    <br />Visakapatnam district
+                  </span>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-header-red">
+              <h1 class="card-heading">UPDATES</h1>
+              <hr>
+              <h1 class="card-heading">AP State TAEKWONDO CHAMPIONSHIPS </h1>
+            </div>
+            <div class="card-body">
+              <p class="card-p">
+                Results - Coming Soon
+              </p>
+              <hr>
+              <p class="details">
+                <span class="row">
+                  <b><i class="material-icons md-36 icon side-heading">Date</i></b>
+                  <span class="row-item">
+                    <time>Yet to be Announced</time>
+                  </span>
+                </span>
+
+                <span class="row">
+                  <b><i class="material-icons md-36 icon side-heading">Venue</i></b>
+                  <span class="row-item">
+                    <strong>not confirmed</strong>
+                  </span>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-header-grey">
+              <h1 class="card-heading">INFO</h1>
+              <hr>
+              <h1 class="card-heading">National TAEKWONDO CHAMPIONSHIPS</h1>
+            </div>
+            <div class="card-body">
+              <p class="card-p">
+                39<sup>th</sup><b> NATIONAL JUNIOR KYORUGI &<br> </b> 12<sup>th</sup><b> JUNIOR POOMSAE
+                  TAEKWONDO CHAMPIONSHIPS </b>
+              </p>
+              <hr>
+              <p class="details">
+                <span class="row">
+                  <b><i class="material-icons md-36 icon side-heading">Date :</i></b>
+                  <span class="row-item">
+                    <time>3<sup>rd</sup> To 5<sup>th</sup> February 2023</time>
+                  </span>
+                </span>
+
+                <span class="row">
+                  <b><i class="material-icons md-36 icon side-heading">Venue :</i></b>
+                  <span class="row-item">
+                    <strong>PORT Stadium, Visakhapatnam</strong>
+                    <br />Andhra Pradesh
+                  </span>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-header-grey">
+              <h1 class="card-heading">INFO</h1>
+              <hr>
+              <h1 class="card-heading">National TAEKWONDO CHAMPIONSHIPS</h1>
+            </div>
+            <div class="card-body">
+              <p class="card-p">
+                38<sup>th</sup><b> NATIONAL SENIOR KYORUGI &<br> </b> 11<sup>th</sup><b> SENIOR POOMSAE
+                  TAEKWONDO CHAMPIONSHIPS </b>
+              </p>
+              <hr>
+              <p class="details">
+                <span class="row">
+                  <b><i class="material-icons md-36 icon side-heading">Date :</i></b>
+                  <span class="row-item">
+                    <time>10<sup>th</sup> To 12<sup>th</sup> February 2023</time>
+                  </span>
+                </span>
+
+                <span class="row">
+                  <b><i class="material-icons md-36 icon side-heading">Venue :</i></b>
+                  <span class="row-item">
+                    <strong>Rajiv Gandhi Indoor Stadium</strong>
+                    <br />Puducherry
+                  </span>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-header-red">
+              <h1 class="card-heading">UPDATES</h1>
+              <hr>
+              <h1 class="card-heading">National TAEKWONDO CHAMPIONSHIPS </h1>
+            </div>
+            <div class="card-body">
+              <p class="card-p">
+                5<sup>th</sup><b> NATIONAL CADET KYORUGI &<br> POOMSAE TAEKWONDO CHAMPIONSHIPS</b>
+              </p>
+              <hr>
+              <p class="details">
+                <span class="row">
+                  <b><i class="material-icons md-36 icon side-heading">Date :</i></b>
+                  <span class="row-item">
+                    <time>26<sup>th</sup> To 28<sup>th</sup> February 2023</time>
+                  </span>
+                </span>
+
+                <span class="row">
+                  <b><i class="material-icons md-36 icon side-heading">Venue :</i></b>
+                  <span class="row-item">
+                    <strong>GMC BALAYOGI INDOOR Stadium, Gachibowli </strong>
+                    <br />Hyderabad, Telangana
+                  </span>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-header-grey">
+              <h1 class="card-heading">Card Header Grey</h1>
+            </div>
+            <div class="card-body">
+              <p class="card-p">
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                alteration in some form, by injected humour,
+                or randomised words which don't look even slightly believable. If you are going to use a passage of
+                Lorem Ipsum, you need to be sure there
+                isn't anything embarrassing hidden in the middle of text.
+              </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-header-grey">
+              <h1 class="card-heading">Card Header Grey</h1>
+            </div>
+            <div class="card-body">
+              <p class="card-p">
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                alteration in some form, by injected humour,
+                or randomised words which don't look even slightly believable. If you are going to use a passage of
+                Lorem Ipsum, you need to be sure there
+                isn't anything embarrassing hidden in the middle of text.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-header-red">
+              <h1 class="card-heading">AP State TAEKWONDO CHAMPIONSHIPS </h1>
+            </div>
+            <div class="card-body">
+              <p class="card-p">
+                Results - Coming Soon
+              </p>
+              <p class="details">
+                <span class="row">
+                  <b><i class="material-icons md-36 icon side-heading">Date</i></b>
+                  <span class="row-item">
+                    <time>Yet to be Announced</time>
+                  </span>
+                </span>
+
+                <span class="row">
+                  <b><i class="material-icons md-36 icon side-heading">Venue</i></b>
+                  <span class="row-item">
+                    <strong>not confirmed</strong>
+                  </span>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-header-grey">
+              <h1 class="card-heading">Card Header Grey</h1>
+            </div>
+            <div class="card-body">
+              <p class="card-p">
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                alteration in some form, by injected humour,
+                or randomised words which don't look even slightly believable. If you are going to use a passage of
+                Lorem Ipsum, you need to be sure there
+                isn't anything embarrassing hidden in the middle of text.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    -->
+    </div>
+    <!--End of Event Cards-->
+    <!-- Site footer -->
+    <footer class="site-footer" >
+      <div class="container-fluid" >
+        <div class="row container-footer">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify">
+              <b><i>AP Taekawondo</i></b> Follow us on social media to keep
+              up-to-date with our news, events and promotional videos
+            </p>
+          </div>
+
+          <div class="col-xs-6 col-md-3 categories-footer">
+            <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a href="#">Athletics Registration</a></li>
+              <li>
+                <a href="#">Club Registration</a>
+              </li>
+              <li>
+                <a href="#">Championship Registration</a>
+              </li>
+              <li>
+                <a href="#">Events Calendar</a>
+              </li>
+              <li>
+                <a href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li>
+                <a href="#">Contribute</a>
+              </li>
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li><a href="#">Sitemap</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">
+              Copyright &copy; 2023 All Rights Reserved by
+              <a href="#">AP Taekawondo</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="bi bi-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="bi bi-twitter"></i></a></li>
+              <li><a class="google" href="#"><i class="bi bi-google"></i></a></li>
+              <li><a class="youtube" href="#"><i class="bi bi-youtube"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End of Footer -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
