@@ -11,6 +11,11 @@ body {
   visibility: hidden;
 }
 
+/*---------- Obejectives ----------------*/
+#more {
+  display: none;
+}
+
 /*-------------- Inforamtion overlay container ----------------*/
 .container-slider {
   margin-top: -78px;
